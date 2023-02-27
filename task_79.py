@@ -10,3 +10,4 @@ c = int(input('Enter a number: '))
 
 n =  math.ceil(a/2)+math.ceil(b/2) + math.ceil(c/2)
 print(n)
+print('It added to index after restoring.')
