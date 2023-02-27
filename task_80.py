@@ -1,2 +1,15 @@
-#DISCARD changes  in working directory
-#This comment should be deleted.
+#80.Дано п’ятизначне десяткове число. Побудуйте нове десяткове число за
+#наступними правилами. Необхідно обчислити два числа, з яких перше- це сума
+#першої, третьої та п’ятої цифр і друге число - це сума другої і четвертої
+#цифр введеного числа. Відповідь - це отримані два числа, якізаписуються один
+#за одним в одному рядку.
+
+num = int(input('Enter a five digit number: '))
+first = num //10000
+second = num//1000%10
+third = num//100%10
+forth = num % 100 //10
+fifth = num % 100 % 10
+num1 = first + third + fifth
+num2 = second + forth
+print('{}{}'.format(num1,num2))
