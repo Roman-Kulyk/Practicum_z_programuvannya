@@ -1,5 +1,5 @@
 '''It would be great if this program:
--runs every month when money  come to my bank account and generat an email with this information.
+-runs every month when money  come to my bank account and generate an email with this information.
 -another features should be added further.'''
 
 num = float(input('Enter a currency rate: '))
