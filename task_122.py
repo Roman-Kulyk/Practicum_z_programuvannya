@@ -4,14 +4,7 @@ b=int(input('Enter a number: '))
 c=int(input('Enter a number: '))
 d=int(input('Enter a number: '))
 e=int(input('Enter a number: '))
+n=0
+if a > 0:
+    n+=1
 
-
-
-
-for i in range(a,e):
-    i = 0
-    if i > 0:
-        i += 1
-    else:
-        i += 0
-print(i)
