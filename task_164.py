@@ -9,10 +9,8 @@ w = float(input("Enter your weight: "))
 index = w /( h * h)
 
 if index < 18.5:
-    print("underweight")
+    print(f"Your body mass index is: {index:.2f}, that is underweight")
 elif 18.5 < index < 24.9:
-    print("normal weight")
+    print(f"Your body mass index is: {index:.2f}, that is normal weight")
 elif 24.9 < index:
-    print("overweight")
-
-    
+    print(f"Your body mass index is: {index:.2f}, that is overweight.")
