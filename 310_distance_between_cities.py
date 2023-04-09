@@ -25,7 +25,6 @@ x1 = x1 * math.pi/180
 y1 = y1 * math.pi/180
 x2 = x2 * math.pi/180
 y2 = x2 * math.pi/180
-y2 =math.radians(y2)
 
 d1 = math.sin(x1)
 d2 = math.sin(x2)
@@ -35,4 +34,3 @@ delta = math.cos(y1 - y2)
 distance = r * math.acos(d1 * d2 + d3 * d4 * delta)
 
 print('Distance: {0:>10.3f}'.format(distance))
-#'{0:10d} {1:10f} {2:10s}'.format(n, f, s)
