@@ -6,4 +6,4 @@ num_list = []
 for i in range(100,1000):
     if i % n == 0:
         num_list.append(i)
-print(num_list)
+print(sum(num_list))
