@@ -3,9 +3,9 @@
 
 n = int(input("Enter a number: "))
 num_list = []
-for i in range(1,n):
+for i in range(1,n + 1):
     mul = i ** 2
     num_list.append(mul)
-print(num_list)
+print(sum(num_list))
 
      
