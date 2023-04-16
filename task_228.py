@@ -4,7 +4,10 @@
 
 n = int(input("Enter a number: "))
 num_list = []
-for i in range(1,n):
+for i in range(1,n + 1):
     mul = i /(i + 1)
     num_list.append(mul)
-print(num_list)
+Sum = (sum(num_list))
+print(f'{Sum:.2f}'.format(Sum))
+
+#'{0:d} {1:.3f} {2:s}'.format(n, f, s)
