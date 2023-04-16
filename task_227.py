@@ -6,4 +6,4 @@ num_list = []
 for i in range(1,n):
     mul = i *(i + 1)
     num_list.append(mul)
-print(num_list)
+print(sum(num_list))
