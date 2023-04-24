@@ -12,11 +12,8 @@ True
 False
 '''
 a = input("Enter a number: ")
-#print(type(a))
-a_list = list(a)
-#print(a_list)
-#print(type(a_list))
-if (int(max(a_list)) - (int(min(a_list)))) % 2 == 0:
+a_list = list(a) #turn a string into a list
+if (int(max(a_list)) - (int(min(a_list)))) % 2 == 0: #takes a max and min member of the list
     print(True)
 else:
     print(False)
