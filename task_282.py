@@ -16,28 +16,15 @@
 
 2
 
-'''
-'''
-num_list = []
-previous_les =[]
-while True:
-    n = int(input("Enter a number: "))
-    if n == 0:
-        break
-    else:
-         for i in num_list:
-             if num_list[i]>num_list[i-1]:
-                previous_les.append[i]
-                print(len(previous_les))
-  '''          
+'''       
                  
-count = 0
-prev = int(input())
+count = 0     
+prev = int(input())#it reads first element of sequence
 while True:
-    curr = int(input())
-    if curr == 0:
+    curr = int(input())#it reads others elements of sequence
+    if curr == 0:#it checks if element not equal to zero
         break
-    if curr > prev:
-        count+=1
-    prev = curr
-print(count)
+    if curr > prev:#it cheks if current element bigger than the previous one
+        count+=1 #it add to count variable if previous is true
+    prev = curr #it assign current value to prev variable
+print(count) #it prints quantity of needed elements
