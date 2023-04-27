@@ -26,4 +26,4 @@ while True:
         num_list.append(curr)# it adds element to the sequence
         
             
-print(num_list[2])#it prints quantity of needed elements
+print(num_list[2])#it prints second element in the sequence
