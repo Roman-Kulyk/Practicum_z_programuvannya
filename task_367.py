@@ -11,7 +11,7 @@ a 5
 пропуск 3
 '''
 string = input("Enter a string: ")
-char_frequency = {}
+char_frequency = {}#it initialize empty dictionary
 for char in string:
     if char in char_frequency:
         char_frequency[char] += 1
