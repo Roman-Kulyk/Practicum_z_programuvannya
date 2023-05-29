@@ -10,12 +10,11 @@
 0 4 2
 '''
 lst = []
-n = int(input("Enter number of elements : "))
-for i in range(0, n):
-    ele = int(input('Enter an element: '))
-    lst.append(ele) 
+lst = [int(item) for item in input("Enter the list items : ").split()]
 print(lst)
 
 half_list = len(lst)//2
 print(half_list)
-print(lst[half_list:])
+for i in lst[half_list:]:
+    print(i, end = " ")
+print()
