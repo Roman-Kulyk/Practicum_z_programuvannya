@@ -15,5 +15,7 @@ x = txt.split()
 print(x)
 x.sort()
 print(x) 
-
+for i in x:
+    print(i,end=' ')
+print()
 
