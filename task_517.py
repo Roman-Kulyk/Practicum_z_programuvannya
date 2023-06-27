@@ -16,9 +16,7 @@ dictionary = {'Ada Lovelace':'10/12/1815',\
               'Roman Kulyk':'14/02/1980'}
 text = input('Enter name of person: ')
 
-for key, value in dictionary.items():
-    if key == text:
-        print(f'{key} birthday is {value}'.format(key, value))
-    else:
-        print(f"We don't have {text}'s birthday.".format(text))
-        break
+if text in dictionary:
+    print(f'{text} was born {dictionary[text]}')
+else:
+    print(f"Sadly, we don't have {text}'s birthday.")
