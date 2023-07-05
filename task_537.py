@@ -16,13 +16,9 @@ list_of_dicts = [{"name_1":"Roman","points":[23,34,45,56,67,78]},
 
 
 list_value_1 = list_of_dicts[0]["points"]
-
 list_value_2 = list_of_dicts[1]["points"]
-
 list_value_3 = list_of_dicts[2]["points"]
-
 list_value_4 = list_of_dicts[3]["points"]
-
 
 print(min(list_value_1),min(list_value_2),min(list_value_3),min(list_value_4))
 
