@@ -16,4 +16,7 @@ for char in text:#for every item in text
     char = char.lower()#it converts character into lower register
     if char.isalpha():#it checks if item is a letter
         letter_count[ord(char) - ord('a')] += 1#it counts letters
-print(' '.join(str(count) for count in letter_count))#it prints string of letter whic were counted
+#print(' '.join(str(count) for count in letter_count))#it prints string of letter whic were counted
+for count in letter_count:
+    print(count, end = ' ')
+print()
