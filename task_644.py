@@ -15,11 +15,8 @@ NO
 YES
 '''
 def square_func(x, y):
-    if 0 <= x <= 2 and 0 <= y <= 2:
-        print("YES")
-    else:
-        print("NO")
+    result = "YES" if 0 <=x <=2 and 0 <= y <=2 else "NO"
+    return result
 
-
-square_func(2,-1)
-square_func(1,1)
+print(square_func(2,-1))
+print(square_func(1,1))
