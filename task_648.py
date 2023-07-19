@@ -11,4 +11,8 @@
 Вихідні дані:
 1.41421
 '''
-print('Hello branch task_648_667')
+def find_distance(x1,y1,x2,y2):
+    distance = ((x2 - x1) ** 2 + (y2 -y1) ** 2)**0.5
+    print(f'{distance:.5f}')
+
+find_distance(0,0,1,1)
