@@ -4,18 +4,22 @@
 # повідомляє, що квадрат має колір white.
 
 def find_square_color(position):
-    letter = position[0]
-    number = int(position[1])
+    letter = position[0]#it assign first char to letter
+    number = int(position[1])#it assign second char to number
     if letter in['a','c','e','g']:
         if number % 2 != 0:
             color = 'black'
         else:
             color = 'white'
+            
+
     elif letter in['b','d','f','h']:
         if number % 2 != 0:
             color = 'white'
         else:
             color = 'black'
+
+
     return color
     
 position = input("Enter position: ")
