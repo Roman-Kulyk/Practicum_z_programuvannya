@@ -30,19 +30,17 @@ def how_many_per_class():
     return A,B,C
 
 def revenue(A,B,C):
+
     price_A = float(input("How much one ticket for A:"))
     price_B = float(input("How much one ticket for B:"))
     price_C = float(input("How much one ticket for C:"))
     revenue = A * price_A + B * price_B + C * price_C
 
-    #print(A * price_A)
-    #print(B * price_B)
-    #print(C * price_C)
-    #print(revenue)
     revenue_dict = {}
     revenue_dict['A'] = price_A*A
     revenue_dict['B'] = price_B*B
     revenue_dict['C'] = price_C*C
+    
     print(f'({revenue_dict},{revenue})')
 
 A,B,C = how_many_per_class()
