@@ -15,18 +15,18 @@ True
 False
 '''
 def is_valid_date(day,month,year):
-    if day < 1 or month < 1 or month >12 or year < 1:
+    if day < 1 or month < 1 or month > 12 or year < 1:
         return False
     
-    if month in[4,6,9,11] and day > 30:
+    if month in[4,6,9,11] and day > 30:#it checks that these months have 30 days
         return False
-    elif month == 2:
+    elif month == 2:#it checks February
         if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
-            if day > 29:
+            if day > 29:#if it has 29 days in leap years
                 return False
-        elif day > 28:
+        elif day > 28:#if it has 28 days in ordinary years
             return False
-    elif day > 31:
+    elif day > 31:#it checks that these months have 31 days
         return False
     return True
 
