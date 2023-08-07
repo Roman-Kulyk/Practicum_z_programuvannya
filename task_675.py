@@ -13,16 +13,21 @@ True
 False
 '''
 def if_arithmetic():
+
     seq = [int(item) for item in input("Enter the list members: ").split(' ')]
-    seq = sorted(seq)
-    if len(seq) >  1:
-        const = seq[1] - seq[0]
+    seq = sorted(seq)#it returns sequense in order
+
+    if len(seq) >  1:#in case sequence larger than 1
+        const = seq[1] - seq[0]#constant is equal list member 1 - list member 0
     else:
         return True
+    
+
     for i in range(len(seq) - 1):
-        if seq[i + 1] - seq[i] != const:
+        if seq[i + 1] - seq[i] != const:#if difference between two members
+            #equal to constant
             return False
-    return True
+    return True#it returns True
 
 
 print(if_arithmetic())
