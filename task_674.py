@@ -12,13 +12,14 @@
 def count_elements(sequence):
     elements = sequence.split(',')
     counts = {}
-    for elem in elements:
-        if elem in counts:
-            counts[elem] += 1
-        else:
-            counts[elem] = 1
+    for elem in elements:#for every element in elements sequence
+        if elem in counts:#if element in counts dictionary 
+            counts[elem] += 1#icrease its value by 1
+        else:#if not in count dictionary
+            counts[elem] = 1#add it to dictionary and assign its value = 1
 
     sorted_counts = sorted(counts.items(),key=lambda x:x[1],reverse=True)
+    #it sort the items in dictionary in ascending order by its values
     return sorted_counts
 
 input_sequence = input('Enter your sequence: ')
