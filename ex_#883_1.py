@@ -4,7 +4,7 @@
 
 numbers = []
 
-freading1 = open('numbers.txt','rt')
+freading1 = open('ex_#883_1_numbers.txt','rt')
 lines = freading1.readlines()
 freading1.close()
 
