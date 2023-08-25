@@ -10,5 +10,5 @@
 '''
 import math
 
-print(math.modf(5.8))
-print(math.modf(7.9))
+print(math.modf(5.8))#it returns the integer and fractional parts of float as a tuple, in that order
+print(math.modf(7.9))#it returns the integer and fractional parts of float as a tuple, in that order
