@@ -1,0 +1,10 @@
+In Python you can create functions.
+In Python you can divide numbers.
+In Python you can multiply strings.
+In Python you can open a file.
+In Python you can close a file.
+In Python you can make your own class.
+In Python you can create lambda functions.
+In Python you can draw a painting.
+In Python you can create your own website.
+In Python you can use another libraries.
