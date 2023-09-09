@@ -12,6 +12,16 @@
 '''
 
 import operator
+from operator import itemgetter
+#initializing dictionary
+
 dictionary = {'Burj Khalifa': 828, 'Shanghai Tower': 632, 'Abraj Al Bait': 601}
-print(operator.itemgetter(dictionary))
-print(operator.itemgetter(dictionary))
+
+#printing original dictionary
+print("The original dictionary is: " + str(dictionary))
+
+#sorting dictionary by keys and values
+res = dict(sorted(dictionary.items(), key = itemgetter(0, 1)))
+
+#printing result
+print("Sorted dictionary: " + str(res))
