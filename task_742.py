@@ -11,9 +11,9 @@
 Файл output.txt з вмістом
 4
 '''
-freading = open('task_742_input.txt', 'rt' )
-date = freading.read()
-freading.close()
+freading_1 = open('task_742_input.txt', 'rt' )
+date = freading_1.read()
+freading_1.close()
 
 print(int(date))
 
@@ -25,4 +25,9 @@ for i in date:
 if result < 10:
     print(result)
 else:
-    pass
+    result %= 10
+    print(result)
+
+freading_2 = open("task_742_output.txt",'w')
+freading_2.write(str(result))
+freading_2.close()
