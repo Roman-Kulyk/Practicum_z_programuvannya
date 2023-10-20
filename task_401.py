@@ -12,19 +12,20 @@
 10
 """
 def calculate_expression(expression):
-    result = 0
-    current_number = 0
-    sign = 1
+    result = 0#it initializes result variable
+    current_number = 0#it initializes current_number variable
+    sign = 1#it initializes sign variable
 
     for char in expression:
-        if char.isdigit():
+        if char.isdigit():#it checks if a char is a digit and adds it to the current_number variable
             current_number = current_number * 10 + int(char)
-        elif char == '+':
+
+        elif char == '+':#if a char is a '+' it calculates addition operation
             result += sign * current_number
             current_number = 0
             sign = 1
 
-        elif char == '-':
+        elif char == '-':#if a char is a '-' it calculated subtraction operation
             result += sign * current_number
             current_number = 0
             sign = -1
