@@ -13,7 +13,8 @@ pinglog W R
 scripts R
 goodluck X W R
 5
-read scripts  
+
+  
 write helloworld.py
 execute scripts
 read pinglog
@@ -31,16 +32,18 @@ def process_operations(file_permissions, operations):
         file, op = operation.split()
         if file in file_permissions and op in file_permissions[file]:
             print("OK")
-        #else:
-        #    print("Access denied")
+        else:
+            print("Access denied")
 
-n = int(input("Enter amount of files: "))
-file_permissions = {}
+n = int(input("Enter amount of files: "))#it asks about amoutn of files
+file_permissions = {}#it initializes an empty dictionary
 
-for _ in range(n):
+for _ in range(n):#it asks to inpute file name and permissions related to it
     file, *permissions = input("Enter your files and permissions: ").split()
-    file_permissions[file] = set(permissions)
 
-m = int(input("Enter amount of requests: "))
-operations = [input("Enter your requests: ") for _ in range(m)]
-process_operations(file_permissions, operations)
+    file_permissions[file] = set(permissions)#it adds new key, value pair to dictionary
+
+m = int(input("Enter amount of requests: "))#it asks about amoutn of requests
+operations = [input("Enter your requests: ") for _ in range(m)]#it inputs request itself
+
+process_operations(file_permissions, operations)#it calls the function
