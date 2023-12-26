@@ -30,3 +30,21 @@ e. Збережіть клас User в одному модулі, а класи 
 файлі створіть екземпляр admin і викличте метод show_privileges(), щоб перевірити, що все 
 працює правильно.
 
+user_1 = User('R2','D2')
+user_2 = User('C3','P0')
+
+user_1.describe_user()
+user_2.describe_user()
+
+user_1.greeting_user()
+user_2.greeting_user()
+print(user_1.login_attempts)
+user_1.increment_login_attempts()
+user_1.increment_login_attempts()
+user_1.increment_login_attempts()
+print(user_1.login_attempts)
+user_1.reset_login_attempts()
+print(user_1.login_attempts)
+priv = Admin('BB8','BB')
+priv.describe_user()
+priv.show_priveleges()
