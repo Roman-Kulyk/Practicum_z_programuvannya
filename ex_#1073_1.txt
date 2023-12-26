@@ -1,0 +1,60 @@
+Напишіть програми у середовищі програмування для розв’язування таких завдань:
+1. Онлайн-магазин.
+
+a. Створіть клас з ім’ям Shop(). Метод __init__() класу Shop() повинен містити два атрибути: 
+shop_name і store_type. Створіть метод describe_shop(), який виводить два атрибути, і 
+метод open_shop(), який виводить повідомлення про те, що онлайн-магазин відкритий. 
+Створіть на основі класу екземпляр з ім’ям store. Виведіть два атрибути окремо, потім викличте 
+обидва методи.
+
+b. Створіть три різних екземпляри класу, викличте для кожного екземпляру метод describe_shop().
+
+c. Додайте атрибут number_of_units зі значенням за замовчуванням 0; він представляє кількість 
+видів товару у магазині. Створіть екземпляр з ім’ям store. Виведіть значення number_of_units, 
+а потім змініть number_of_units і виведіть знову.
+
+d. Додайте метод з ім’ям set_number_of_units(), що дозволяє задати кількість видів товару. 
+Викличте метод з новим числом, знову виведіть значення. Додайте метод з ім’ям 
+increment_number_of_units(), який збільшує кількість видів товару на задану величину. 
+Викличте цей метод.
+
+e. Напишіть клас Discount(), що успадковує від класу Shop(). Додайте атрибут з ім’ям 
+discount_products для зберігання списку товарів, на які встановлена знижка. Напишіть метод 
+get_discounts_ptoducts, який виводить цей список. Створіть екземпляр store_discount і викличте 
+цей метод.
+
+f. Збережіть код класу Shop() у модулі. Створіть окремий файл, що імпортує клас Shop(). Створіть 
+екземпляр all_store і викличте один з методів Shop(), щоб перевірити, що команда import працює 
+правильно.
+
+
+'''
+store_1 = Shop("MyStore", "Online")
+store_2 = Shop("ACBA","Offline")
+store_3 = Shop("FORA","Offline") 
+print(store_1.shop_name)
+print(store_1.store_type)
+
+store_1.describe_shop()
+store_2.open_shop()
+
+store_1.describe_shop()
+store_2.describe_shop()
+store_3.describe_shop()
+
+store_1.read_number_of_units()
+store_1.number_of_units = 120
+store_1.read_number_of_units()
+store_1.set_number_of_units(340)
+store_1.read_number_of_units()
+
+store_1.increment_number_of_units(20)
+store_1.increment_number_of_units(20)
+store_1.increment_number_of_units(20)
+store_1.read_number_of_units()
+
+store_discount = Discout('MyStore','online')
+store_discount.get_discount_products()
+store_discount.discount_products = ['milk','coffee','tea']
+store_discount.get_discount_products()
+'''
